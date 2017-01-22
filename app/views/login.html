@@ -1,13 +1,13 @@
 <div class="jumbotron">
   <h1>'Allo, 'Allo!</h1>
+  <br>
   <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
-</div>
-
-<div class="row marketing">
-  <input ng-repeat="item in awesomeThings track by $index" ng-model="awesomeThings[$index]"></input>
-  <div ng-repeat="item in awesomeThings">{{item}}</div>
+    <img src="images/yeoman.png" alt="I'm Yeoman"><br><br>
+    Log in to prescribe.
+  </p><br>
+  <form name="login">
+<input type="text" name="userid" value="Username" onFocus="this.value=''"/>
+<input type="password" name="pswrd" value="Password" onFocus="this.value=''"/>
+<br><br><br>
+  <p><input type="button" onclick="check(this.form)" class="btn btn-lg btn-success" ng-href="#/" value="Log In!"/></p>
 </div>
