@@ -1,16 +1,47 @@
 <div class="jumbotron">
 	<img src="images/templogo.png" alt="A temporary logo"><br>
+
 	<h1> Write a Prescription </h1>
 
-	<p>Write prescriptions for your patients here.</p>
+	<p id="presc">
+		Write prescriptions for your patients here.
 
-	<p align="right"> 
-		<label>Patient Name: <input ng-model="prescription.pname" /></label>
-		<br>
-		<label>Prescriber Name: <input ng-model="prescription.scribename" /></label>
-		<br>
-		<label>Medication Name: <input ng-model="prescription.medname" /></label>
-		<br>
-		<label>Expiration Date: <input ng-model="prescription.expire" /></label>
+		<p id="info" align="right"> 
+			<label>Patient Name: <input ng-model="prescription.pname" /></label>
+			<br>
+			<label>Prescriber Name: <input ng-model="prescription.scribename" /></label>
+			<br>
+			<label>Medication Name: <input ng-model="prescription.medname" /></label>
+			<br>
+			<label>Expiration Date: <input ng-model="prescription.expire" /></label>
+		</p>
+	
+  		<p id="but1">
+  			<input type="button" onclick="toggle()" class="btn btn-lg btn-success" ng-href="#/" value="Check Entries"/>
+  		</p>
+
+  	</p>
+
+  	<p id="conf" style="display:none">
+  		You entered the following information. Please double check it for correctness.<br>
+			<pre id="nam" style="display:none">Patient Name: <span ng-bind="prescription.pname" /></pre>
+			<br>
+			<pre id="doc" style="display:none">Prescriber Name: <span ng-bind="prescription.scribename" /></pre>
+			<br>
+			<pre id="med" style="display:none">Medication Name: <span ng-bind="prescription.medname" /></pre>
+			<br>
+			<pre id="exp" style="display:none">Expiration Date: <span ng-bind="prescription.expire" /></pre>
+			<br>
+  	</p>
+
+  	<p id="but2" style="display:none">
+		<input type="button" onclick="" class="btn btn-lg btn-success" ng-href="#/" value="Email Receipt"/>
+		<input type="button" onclick="" class="btn btn-lg btn-success" ng-href="#/" value="Text Receipt"/>
+		<input type="button" onclick="" class="btn btn-lg btn-success" ng-href="#/" value="Print Receipt"/>
+		<br><br>
+		<input type="button" onclick="toggle()" class="btn btn-lg btn-success" ng-href="#/" value="Re-enter Information"/>
 	</p>
+
 </div>
+
+
