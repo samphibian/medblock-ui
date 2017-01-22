@@ -27,11 +27,11 @@ angular
         controller: 'LoginCtrl',
         controllerAs: 'login'
       })
-      .state('about', {
-		    url: '/about',
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl',
-        controllerAs: 'about'
+      .state('success', {
+		    url: '/success',
+        templateUrl: 'views/success.html',
+        controller: 'SuccessCtrl',
+        controllerAs: 'success'
       })
       .state('prescription', {
         url: '/prescription',

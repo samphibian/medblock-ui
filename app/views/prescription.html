@@ -1,12 +1,12 @@
 <div class="jumbotron">
 	<img src="images/templogo.png" alt="A temporary logo"><br>
 
-	<h1> Write a Prescription </h1>
+	<h1><font face = "Palatino Linotype"> Write a Prescription </font></h1>
 
 	<p id="presc">
-		Write prescriptions for your patients here.
+		<font face = "Palatino Linotype"> Write prescriptions for your patients here. </font>
 
-		<p id="info" align="right"> 
+		<p id="info" align="right"> <font face = "Palatino Linotype">
 			<label>Patient Name: <input ng-model="prescription.pname" /></label>
 			<br>
 			<label>Prescriber Name: <input ng-model="prescription.scribename" /></label>
@@ -14,16 +14,18 @@
 			<label>Medication Name: <input ng-model="prescription.medname" /></label>
 			<br>
 			<label>Expiration Date: <input ng-model="prescription.expire" /></label>
+			</font>
 		</p>
 	
   		<p id="but1">
   			<input type="button" onclick="toggle()" class="btn btn-lg btn-success" ng-href="#/" value="Check Entries"/>
   		</p>
-
   	</p>
 
   	<p id="conf" style="display:none">
+  		<font face = "Palatino Linotype">
   		You entered the following information. Please double check it for correctness.<br>
+  		</font>
 			<pre id="nam" style="display:none">Patient Name: <span ng-bind="prescription.pname" /></pre>
 			<br>
 			<pre id="doc" style="display:none">Prescriber Name: <span ng-bind="prescription.scribename" /></pre>
@@ -35,8 +37,8 @@
   	</p>
 
   	<p id="but2" style="display:none">
-		<input type="button" onclick="" class="btn btn-lg btn-success" ng-href="#/" value="Email Receipt"/>
-		<input type="button" onclick="" class="btn btn-lg btn-success" ng-href="#/" value="Text Receipt"/>
+		<input type="button" onclick="window.location.href='/#!/success'" class="btn btn-lg btn-success" ng-href="#/" value="Email Receipt"/>
+		<input type="button" onclick="window.location.href='/#!/success'" class="btn btn-lg btn-success" ng-href="#/" value="Text Receipt"/>
 		<input type="button" onclick="" class="btn btn-lg btn-success" ng-href="#/" value="Print Receipt"/>
 		<br><br>
 		<input type="button" onclick="toggle()" class="btn btn-lg btn-success" ng-href="#/" value="Re-enter Information"/>
