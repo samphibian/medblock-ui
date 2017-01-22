@@ -32,5 +32,11 @@ angular
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl',
         controllerAs: 'about'
+      })
+      .state('prescription', {
+        url: '/prescription',
+        templateUrl: 'views/prescription.html',
+        controller: 'PrescripCtrl',
+        controllerAs: 'prescription'
       });
   });
